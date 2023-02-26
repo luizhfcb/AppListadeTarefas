@@ -1,0 +1,134 @@
+:root{
+    --sombra: #13293d;
+    --caixatarefas: #006494;
+}
+
+body{
+    background-image: linear-gradient(to right, #1E90FF, #40E0D0, #4169E1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+input#tarefas{
+    height: 50px;
+    width: 20%;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    border: none;
+    word-break: break-all;
+    overflow: auto;
+    max-width: 100%;
+}
+
+.botaoadd{
+    border: none;
+    border-radius: 15px;
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: #3f8a9c;
+    
+}
+
+.botaoadd:hover{
+    background-color: rgba(89, 115, 187, 0.2);
+}
+
+.containerTop{
+    text-align: center;
+    color: white;
+}
+
+#containerTarefas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-top: 20px;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+}
+
+#titulo{
+    color: white;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.containerStatus{
+    height: 320px;
+    overflow: auto;
+    padding: 10px;
+    box-shadow: 0px 1px 6px -7px var(--sombra);
+    text-shadow: 0px 1px 0px var(--sombra);
+}
+
+.containerStatus::-webkit-scrollbar {
+    height: 0;
+    background-color: transparent;
+}
+
+.botoestarefa{
+    font-size:15px;
+    font-family:Arial;
+    width:80%;
+    height: 150px;
+    border-width:1px;
+    color:#fff;
+    border-color:#13293d;
+    font-weight:bold;
+    border-top-left-radius:21px;
+    border-top-right-radius:21px;
+    border-bottom-left-radius:21px;
+    border-bottom-right-radius:21px;
+    box-shadow: 0px 10px 14px -7px #13293d;
+    text-shadow: 0px 1px 0px #13293d;
+    background-color: rgb(0, 191, 255,.3);
+    margin-bottom: 20px;
+    word-break: break-all;
+}
+
+.botoestarefa:hover{
+    background-color: #006494;
+    cursor: pointer;
+}
+
+.tituloprogresso{
+    height: 50px;
+}
+
+@media screen and (max-width:414px) {
+    .botoestarefa{
+        height: 100px;
+    }
+    #containerTarefas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+}
+
+.buttonOpcoes {
+
+    font-size: 10px;
+    font-family: Arial;
+    width: 80%;
+    height: 30px;
+    border-width: 1px;
+    color: #fff;
+    border-color: #13293d;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 10px 14px -7px #13293d;
+    text-shadow: 0px 1px 0px #13293d;
+    background-color: #1b98e0;
+    margin-bottom: 2px;
+    word-break: break-all;
+}
+
+.buttonOpcoes:hover {
+    background-color: #006494;
+    cursor: pointer;
+}
